@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@layer components {
+  .input {
+    @apply border border-gray-300 h-14 px-4 appearance-none rounded-none text-gray-400 placeholder:text-gray-400;
+  }
+
+  .card {
+    @apply bg-gray-100 p-2 rounded-sm flex gap-x-2 min-h-[40px];
+  }
+}
